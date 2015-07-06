@@ -1,0 +1,27 @@
+{
+	"app": "./src/app/",
+	"api": "./api/",
+	"test": "./test",
+	"templates": "./src/app/**/*.html",
+	"vendorjs": [
+		"./bower_components/jquery/dist/jquery.min.js",
+		"./bower_components/angular/angular.min.js",
+		"./bower_components/bootstrap/dist/js/bootstrap.min.js"
+	],
+	"vendorcss": [
+		"./bower_components/bootstrap/dist/css/bootstrap.min.css"
+	],
+	"css": [
+		"./src/content/css/style.css"
+	],
+	"js": [
+		"./src/app/**/*.js"
+	],
+	"fonts": [
+		"./bower_components/font-awesome/fonts/**/*.*"
+	],
+	"images": [
+		"./src/content/images/**/*"
+	],
+	"build": "./build/"
+}

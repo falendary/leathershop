@@ -1,0 +1,28 @@
+{
+  "name": "leathershop",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergey Zhitenev <zhitenev36@gmail.com> (https://github.com/falendary)",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "gulp": "~3.9.0"
+  },
+  "devDependencies": {
+    "gulp-angular-templatecache": "~1.6.0",
+    "gulp-concat": "~2.6.0",
+    "gulp-load-plugins": "~1.0.0-rc.1",
+    "gulp-jshint": "~1.11.0",
+    "gulp-ng-annotate": "~1.0.0",
+    "gulp-uglify": "~1.2.0",
+    "karma": "~0.12.37",
+    "mocha": "~2.2.5",
+    "gulp-minify-css": "~1.2.0",
+    "gulp-minify-html": "~1.0.3",
+    "express": "~4.13.0",
+    "serve-static": "~1.10.0"
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html dir="ltr" ng-app="app">
+<head>
+
+    <base href="/">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="" content="" />
+
+    <!-- Stylesheets
+    ============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="content/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="content/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="content/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="content/css/animate.css" type="text/css" />
+
+    <link rel="stylesheet" href="content/css/responsive.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Document Title
+    ============================================= -->
+	<title>Leather shop</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <ng-include src="'app/layout/header.html'"></ng-include>
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="container clearfix" ui-view>
+            
+
+                </div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <ng-include src="'app/layout/footer.html'"></ng-include>
+
+    </div><!-- #wrapper end -->
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+        <!-- External JavaScripts
+    ============================================= -->
+
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="/bower_components/ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- core module -->
+
+    <script type="text/javascript" src="app/app.module.js"></script>
+    <script type="text/javascript" src="app/core/core.module.js"></script>
+    <script type="text/javascript" src="app/core/config.js"></script>
+
+    <!-- widgets -->
+
+    <script type="text/javascript" src="app/widgets/widgets.module.js"></script>
+    <script type="text/javascript" src="app/widgets/fslider.w.js"></script>
+
+    <!-- catalog module -->
+
+    <script type="text/javascript" src="app/catalog/catalog.module.js"></script>
+    <script type="text/javascript" src="app/catalog/catalog.js"></script> 
+    <script type="text/javascript" src="app/catalog/config.route.js"></script>   
+
+    <!-- product module -->
+
+    <script type="text/javascript" src="app/product/product.module.js"></script>
+    <script type="text/javascript" src="app/product/product.js"></script>
+    <script type="text/javascript" src="app/product/config.route.js"></script>
+
+</body>
+</html>
