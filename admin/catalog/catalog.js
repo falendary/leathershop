@@ -1,5 +1,4 @@
-(function()
-{
+(function() {
 
     'use strict';
 
@@ -7,11 +6,11 @@
         .module('admin.catalog')
         .controller('Catalog', Catalog);
 
-    Catalog.$inject = ['$scope'];
+    Catalog.$inject = ['$scope', 'BrandsCollection'];
 
-    function Catalog ($scope)
+    function Catalog ($scope, BrandsCollection)
     {
-
+        $scope.brands = BrandsCollection;
     }
 
 })();

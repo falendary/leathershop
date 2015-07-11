@@ -15,8 +15,7 @@
 			{
 				url: '',
 				parent: 'admin.auth',
-				templateUrl: 'admin/auth/login.html',
-				controller: 'Login'
+				templateUrl: 'admin/auth/login.html'
 			})
 	}
 

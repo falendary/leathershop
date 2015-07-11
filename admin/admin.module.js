@@ -10,7 +10,10 @@
 			'admin.auth',
 			'admin.interface',
 			'admin.dashboard',
-			'admin.catalog'
+			'admin.catalog',
+			'admin.autos',
+			'admin.spares',
+			'admin.spare'
 
 			])
 		.run(Init);

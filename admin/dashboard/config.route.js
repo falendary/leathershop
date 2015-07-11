@@ -16,7 +16,6 @@
 				url: '',
 				parent: 'admin.interface',
 				templateUrl: 'admin/dashboard/dashboard.html',
-				controller: 'Dashboard',
 				data: {
 					requireLogin: true
 				}

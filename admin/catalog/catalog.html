@@ -1,4 +1,4 @@
-<div ng-controller="Catalog">
+<div>
     <section class="content-header">
         <h1>
             Каталог
@@ -10,6 +10,15 @@
     </section>
     <!-- Main content -->
     <section class="content">
-
+        <div class="brands-holder">
+            <ul class="brands-list">
+                <li class="brand-item" ng-repeat="brand in brands">
+                    <a ui-sref="admin.interface.brand({ brand: brand.brand_slug, id: brand.brand_id })">{{brand.brand_name}}</a>
+                </li>
+                <li class="brand-item">
+                    <a ui-sref="admin.interface.brand">Добавить Бренд</a>
+                </li>
+            </ul>
+        </div>
     </section><!-- /.content -->
 </div>
