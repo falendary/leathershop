@@ -1,0 +1,21 @@
+<div>
+    <section class="content-header">
+        <h1>
+            Запчасти
+        </h1>
+        <ol class="breadcrumb">
+            <li><a ui-sref="admin.interface.dashboard"><i class="fa fa-dashboard"></i> Главная</a></li>
+            <li class="active">Запчасти</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <div class="brands-holder">
+            <ul>
+                <li ng-repeat="spare in spares">
+                    <a ui-sref>{{spare.auto_name}}</a> | {{spare.category_name}} | {{spare.price}} | {{spare.year}}
+                </li>
+            </ul>
+        </div>
+    </section><!-- /.content -->
+</div>

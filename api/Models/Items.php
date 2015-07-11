@@ -5,7 +5,7 @@ use Phalcon\Mvc\Model,
     Phalcon\Mvc\Model\Validator\InclusionIn,
     Phalcon\Mvc\Model\Validator\Uniqueness;
 
-class Products extends Model
+class Items extends Model
 {
 	public function validation()
 	{
@@ -13,6 +13,6 @@ class Products extends Model
 	}
 	public function getSource()
     {
-        return "Products";
+        return "Items";
     }
 }

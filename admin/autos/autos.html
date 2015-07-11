@@ -1,0 +1,22 @@
+<div>
+    <section class="content-header">
+        <h1>
+            {{brand.brand_name}}
+        </h1>
+        <ol class="breadcrumb">
+            <li><a ui-sref="admin.interface.dashboard"><i class="fa fa-dashboard"></i> Главная</a></li>
+            <li><a ui-sref="admin.interface.catalog"><i class="fa fa-dashboard"></i> Бренды</a></li>
+            <li class="active">{{brand.brand_name}}</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <div class="brands-holder">
+            <ul class="brands-list">
+                <li ng-repeat="auto in autos">
+                    <a ui-sref="admin.interface.spares({brand: auto.brand_slug, model: auto.auto_slug})">{{auto.auto_name}}</a>
+                </li>
+            </ul>
+        </div>
+    </section><!-- /.content -->
+</div>
